@@ -1,6 +1,5 @@
 import React from "react";
 import { styles } from "../../styles/styles";
-import { TiArrowLeft } from "react-icons/ti";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const Reviews2 = () => {
