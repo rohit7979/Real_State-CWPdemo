@@ -23,21 +23,21 @@ const Navbar = () => {
         <Link to="/" className="text-base font-medium">
           Sell
         </Link>
-        <Link to="/" className="text-base font-medium">
+        <Link to="/buy" className="text-base font-medium">
           Buy
         </Link>
-        <Link to="/" className="text-base font-medium">
+        <Link to="/rent" className="text-base font-medium">
           Rent
         </Link>
-        <Link to="/" className="text-base font-medium">
+        <Link to="/find-agent" className="text-base font-medium">
           Find agent
         </Link>
-        <Link to="/" className="text-base font-medium">
+        <Link to="/advertise" className="text-base font-medium">
           Advertise
         </Link>
       </div>
       <div className="hidden lg:flex items-center gap-x-8">
-        <Link to="/" className="text-base font-medium">
+        <Link to="/login" className="text-base font-medium">
           Login
         </Link>
         <Link

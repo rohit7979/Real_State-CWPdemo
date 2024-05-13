@@ -5,6 +5,7 @@ const Buy = lazy(() => import("../pages/Buy"));
 const Rent = lazy(() => import("../pages/Rent"));
 const Login = lazy(() => import("../pages/Login"));
 const Register = lazy(() => import("../pages/Register"));
+const NotFound = lazy(() => import("../pages/NotFound"));
 
 export const routes = [
   {
@@ -31,5 +32,10 @@ export const routes = [
     title: "Home Page",
     url: "/",
     page: <Register />,
+  },
+  {
+    title: "Not Found Page",
+    url: "/:xyz",
+    page: <Layout pages={<NotFound />} />,
   },
 ];
