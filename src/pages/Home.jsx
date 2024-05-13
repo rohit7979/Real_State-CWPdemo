@@ -6,6 +6,7 @@ import HowToSell from "../components/Home/HowToSell";
 import ListingCategory from "../components/Home/ListingCategory";
 import LatestListing from "../components/Home/LatestListing";
 import Count from "../components/Home/Count";
+import Reviews2 from "../components/Home/Reviews2";
 
 const Home = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Home = () => {
       <ListingCategory />
       <LatestListing />
       <Count />
+      <Reviews2 />
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { TiArrowRight } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import { styles } from "../../styles/styles";
 import ListCard from "../Global/ListCard";
+import { popularlist } from "../../constants/popularList";
 
 const PopularListing = () => {
   return (
@@ -34,9 +35,9 @@ const PopularListing = () => {
         </button>
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
-        <ListCard />
-        <ListCard />
-        <ListCard />
+        {popularlist.map((list, index) => {
+          return <ListCard image={list.image} price={list.price} key={index} />;
+        })}
       </div>
     </section>
   );

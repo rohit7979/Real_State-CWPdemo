@@ -1,6 +1,7 @@
 import React from "react";
 import { styles } from "../../styles/styles";
 import HowToSellCard from "./HowToSellCard";
+import { howToSell } from "../../constants/howToSell";
 
 const HowToSell = () => {
   return (
@@ -12,9 +13,15 @@ const HowToSell = () => {
         Beehome in easy way
       </h1>
       <div className="w-full flex items-center justify-center gap-6 flex-wrap pt-12 pb-6">
-        <HowToSellCard />
-        <HowToSellCard />
-        <HowToSellCard />
+        {howToSell.map((sale, index) => {
+          return (
+            <HowToSellCard
+              heading={sale.heading}
+              image={sale.image}
+              key={index}
+            />
+          );
+        })}
       </div>
     </section>
   );

@@ -4,17 +4,13 @@ import { IoBedOutline } from "react-icons/io5";
 import { PiBathtub } from "react-icons/pi";
 import { PiDotsNineBold } from "react-icons/pi";
 
-const ListCard = () => {
+const ListCard = ({ price, image }) => {
   return (
     <div className="w-full rounded-xl shadow-lg hover:shadow-none hover:bg-blue-50 transition-all duration-300 cursor-pointer">
-      <img
-        src="https://images.unsplash.com/photo-1492889971304-ac16ab4a4a5a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt=""
-        className="rounded-xl"
-      />
+      <img src={image} className="rounded-xl" />
       <div className="w-full p-4 flex flex-col items-start gap-3">
         <div className="w-full flex items-center justify-between">
-          <h1 className="font-semibold text-xl">$549,000</h1>
+          <h1 className="font-semibold text-xl">{price}</h1>
           <button className="w-8 h-8 rounded-full flex items-center justify-center p-2 border border-gray-400">
             <FiHeart className="w-full h-full text-gray-400" />
           </button>
