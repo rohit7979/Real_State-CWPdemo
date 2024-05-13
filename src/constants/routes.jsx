@@ -1,0 +1,35 @@
+import { lazy } from "react";
+import Layout from "../components/Global/Layout";
+const Home = lazy(() => import("../pages/Home"));
+const Buy = lazy(() => import("../pages/Buy"));
+const Rent = lazy(() => import("../pages/Rent"));
+const Login = lazy(() => import("../pages/Login"));
+const Register = lazy(() => import("../pages/Register"));
+
+export const routes = [
+  {
+    title: "Home Page",
+    url: "/",
+    page: <Layout pages={<Home />} />,
+  },
+  {
+    title: "Buy Page",
+    url: "/buy",
+    page: <Layout pages={<Buy />} />,
+  },
+  {
+    title: "Rent Page",
+    url: "/rent",
+    page: <Layout pages={<Rent />} />,
+  },
+  {
+    title: "Login Page",
+    url: "/login",
+    page: <Login />,
+  },
+  {
+    title: "Home Page",
+    url: "/",
+    page: <Register />,
+  },
+];
