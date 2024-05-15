@@ -15,10 +15,10 @@ const Navbar = () => {
     <div
       className={`py-6 ${styles.paddingHorizontal} flex items-center justify-between relative overflow-x-hidden`}
     >
-      <h1 className="font-semibold text-2xl flex items-center gap-2">
+      <Link to="/" className="font-semibold text-2xl flex items-center gap-2">
         <FaForumbee className="text-yellow-500 text-3xl" />
         Beehome
-      </h1>
+      </Link>
       <div className="hidden lg:flex items-center gap-x-10">
         <Link to="/" className="text-base font-medium">
           Sell

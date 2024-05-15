@@ -8,7 +8,7 @@ import { TiArrowRight } from "react-icons/ti";
 const Reviews = () => {
   return (
     <div
-      className={`w-full py-6 l:py-12 ${styles.paddingHorizontal} flex flex-col lg:flex-row gap-y-6 items-center justify-between`}
+      className={`w-full py-6 ${styles.paddingHorizontal} flex flex-col lg:flex-row gap-y-6 items-center justify-between`}
     >
       <div className="flex flex-col items-center lg:items-start gap-y-3">
         <div className="flex items-start justify-start gap-1">

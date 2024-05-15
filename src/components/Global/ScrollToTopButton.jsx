@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
 
   return (
     <button
-      className={`bg-yellow-500 fixed bottom-4 right-2 md:right-8 w-10 h-10 rounded-full flex items-center justify-center ${
+      className={`bg-yellow-500 fixed bottom-6 right-2 md:right-6 w-10 h-10 rounded-full flex items-center justify-center ${
         isVisible ? "visible" : "hidden"
       }`}
       onClick={scrollToTop}

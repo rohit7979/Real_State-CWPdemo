@@ -6,7 +6,7 @@ import { howToSell } from "../../constants/howToSell";
 const HowToSell = () => {
   return (
     <section
-      className={`w-full py-6 lg:py-12 ${styles.paddingHorizontal} flex flex-col items-center bg-blue-50`}
+      className={`w-full py-6 lg:py-20 ${styles.paddingHorizontal} flex flex-col items-center bg-blue-50`}
     >
       <h1 className="text-5xl font-semibold text-center lg:leading-[60px]">
         How to sell your home in <br />
