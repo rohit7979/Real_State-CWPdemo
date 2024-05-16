@@ -16,7 +16,7 @@ const PopularListing = () => {
         <div className="flex items-center justify-start gap-2 ">
           <p className="float-left">View All 2,414 listings</p>
           <Link
-            to="/"
+            to="/listings"
             className="w-10 h-10 rounded-full flex items-center justify-center bg-slate-100 p-2"
           >
             <TiArrowRight className="w-full h-full" />
