@@ -6,8 +6,8 @@ import { PiDotsNineBold } from "react-icons/pi";
 
 const ListCard = ({ price, image }) => {
   return (
-    <div className="w-full rounded-xl shadow-lg hover:shadow-none hover:bg-blue-50 transition-all duration-300 cursor-pointer">
-      <img src={image} className="rounded-xl" />
+    <div className="w-full rounded-2xl shadow-lg hover:shadow-none hover:bg-blue-50 transition-all duration-300 cursor-pointer">
+      <img src={image} className="rounded-2xl" />
       <div className="w-full p-4 flex flex-col items-start gap-3">
         <div className="w-full flex items-center justify-between">
           <h1 className="font-semibold text-xl">{price}</h1>
