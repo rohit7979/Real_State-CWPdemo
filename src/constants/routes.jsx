@@ -24,11 +24,11 @@ export const routes = [
     url: "/rent",
     page: <Layout pages={<Rent />} />,
   },
-  {
-    title: "Login Page",
-    url: "/login",
-    page: <Login />,
-  },
+  // {
+  //   title: "Login Page",
+  //   url: "/login",
+  //   page: <Login />,
+  // },
   {
     title: "Home Page",
     url: "/register",

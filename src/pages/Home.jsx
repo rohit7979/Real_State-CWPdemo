@@ -12,6 +12,7 @@ import FindBestHomeWithUs from "../components/Home/FindBestHomeWithUs";
 const Home = () => {
   useEffect(() => {
     document.title = "Beehome - Home";
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div>

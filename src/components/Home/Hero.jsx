@@ -7,7 +7,9 @@ const Hero = () => {
     <div
       className={`w-full py-8 lg:py-20 ${styles.paddingHorizontal} text-center flex flex-col items-center gap-y-6 lg:gap-y-16`}
     >
-      <h1 className="text-7xl lg:text-9xl font-bold">Find your home</h1>
+      <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold">
+        Find your home
+      </h1>
       <div className="h-20 w-full md:w-[70%] bg-slate-100 rounded-full p-2 mx-auto flex items-center justify-between">
         <input
           type="text"
@@ -22,7 +24,7 @@ const Hero = () => {
       <img
         src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt=""
-        className="w-full h-auto lg:h-[90vh] rounded-3xl brightness-90"
+        className="w-full h-auto lg:h-[90vh] rounded-3xl brightness-90 -z-10"
       />
     </div>
   );

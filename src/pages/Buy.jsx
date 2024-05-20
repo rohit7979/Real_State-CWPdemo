@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import HomesGrid from "../components/Buy/HomesGrid";
 
 const Buy = () => {
+  useEffect(() => {
+    document.title = "Beehome - Buy Homes";
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
-      <h1>Buy a House</h1>
+      <HomesGrid />
     </div>
   );
 };
