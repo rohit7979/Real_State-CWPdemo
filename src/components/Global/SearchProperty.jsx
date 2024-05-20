@@ -35,7 +35,11 @@ const SearchProperty = () => {
           >
             Type
           </label>
-          <select name="" id="" className="w-full text-sm outline-none px-0">
+          <select
+            name=""
+            id=""
+            className="w-full text-sm outline-none px-0 bg-transparent"
+          >
             <option value="">House</option>
             <option value="">Apartment</option>
             <option value="">Villa</option>
