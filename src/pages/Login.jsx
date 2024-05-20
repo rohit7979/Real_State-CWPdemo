@@ -14,7 +14,7 @@ const Login = ({ showForm, onclick }) => {
         <div className="w-screen h-screen fixed top-0 right-0 left-0 bottom-0 flex items-center justify-center bg-[rgba(0,0,0,0.3)] z-50">
           <form
             onSubmit={handleSubmit}
-            className={`w-[90%] h-[92vh] lg:w-2/6 bg-white lg:h-[500px] rounded-xl p-8 md:p-8 xl:p-12 z-50 relative flex flex-col justify-center gap-6`}
+            className={`w-[90%] h-auto md:h-[92vh] lg:w-2/6 bg-white lg:h-[500px] rounded-xl p-8 md:p-8 xl:p-12 z-50 relative flex flex-col justify-center gap-6`}
           >
             <button
               onClick={onclick}
