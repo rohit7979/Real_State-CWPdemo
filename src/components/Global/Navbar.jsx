@@ -36,7 +36,7 @@ const Navbar = () => {
           <Link to="/buy" className="text-base font-medium">
             Buy
           </Link>
-          <Link to="/" className="text-base font-medium">
+          <Link to="/sell" className="text-base font-medium">
             Sell
           </Link>
           <Link to="/find-agent" className="text-base font-medium">
@@ -58,12 +58,12 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex items-center gap-4 lg:hidden">
-          <Link
-            to="/login"
+          <button
+            onClick={handleShowForm}
             className="text-sm font-medium bg-yellow-500 px-4 py-2 text-white rounded-full"
           >
             Login
-          </Link>
+          </button>
           <button className="" onClick={handleShowNav}>
             <CgMenuRight className="text-black text-2xl" />
           </button>
@@ -84,7 +84,7 @@ const Navbar = () => {
               <Link to="/buy" className="text-base font-medium">
                 Buy
               </Link>
-              <Link to="/" className="text-base font-medium">
+              <Link to="/sell" className="text-base font-medium">
                 Sell
               </Link>
               <Link to="/find-agent" className="text-base font-medium">
