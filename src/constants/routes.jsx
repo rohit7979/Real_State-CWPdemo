@@ -2,11 +2,13 @@ import { lazy } from "react";
 import Layout from "../components/Global/Layout";
 import Listings from "../pages/Listings";
 const Home = lazy(() => import("../pages/Home"));
+const Sell = lazy(() => import("../pages/Sell"));
 const Buy = lazy(() => import("../pages/Buy"));
 const Rent = lazy(() => import("../pages/Rent"));
 const Login = lazy(() => import("../pages/Login"));
 const Register = lazy(() => import("../pages/Register"));
 const NotFound = lazy(() => import("../pages/NotFound"));
+const FindAgent = lazy(() => import("../pages/FindAgent"));
 
 export const routes = [
   {
@@ -15,14 +17,24 @@ export const routes = [
     page: <Layout pages={<Home />} />,
   },
   {
-    title: "Buy Page",
+    title: "Buy Homes Page",
     url: "/buy",
     page: <Layout pages={<Buy />} />,
   },
   {
-    title: "Rent Page",
+    title: "Sell Homes Page",
+    url: "/sell",
+    page: <Layout pages={<Sell />} />,
+  },
+  {
+    title: "Rent Homes Page",
     url: "/rent",
     page: <Layout pages={<Rent />} />,
+  },
+  {
+    title: "Rent Homes Page",
+    url: "/find-agent",
+    page: <Layout pages={<FindAgent />} />,
   },
   // {
   //   title: "Login Page",
