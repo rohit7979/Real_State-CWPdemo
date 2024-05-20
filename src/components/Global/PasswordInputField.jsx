@@ -17,7 +17,7 @@ const PasswordInputField = ({ labelName, inputType, placeholder, value }) => {
       <div className="w-full border py-2.5 px-4 flex items-center rounded-lg">
         <input
           type={showPassword ? "text" : "password"}
-          className="w-full outline-none text-sm h-full px-1 border-0"
+          className="w-full outline-none text-sm h-full border-0"
           placeholder={placeholder}
         />
         <button onClick={handleTogglePassword}>
