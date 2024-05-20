@@ -14,7 +14,7 @@ const Login = ({ showForm, onclick }) => {
         <div className="w-screen h-screen fixed top-0 right-0 left-0 bottom-0 flex items-center justify-center bg-[rgba(0,0,0,0.3)] z-50">
           <form
             onSubmit={handleSubmit}
-            className={`w-[90%] h-80vh md:h-[92vh] lg:w-2/6 bg-white lg:h-[500px] rounded-xl p-8 md:p-8 xl:p-12 z-50 relative flex flex-col justify-center gap-6`}
+            className={`w-[90%] h-auto md:h-[92vh] lg:w-2/6 bg-white lg:h-[500px] rounded-xl p-8 md:p-8 xl:p-12 z-50 relative flex flex-col justify-center gap-6`}
           >
             <button
               onClick={onclick}
@@ -22,7 +22,7 @@ const Login = ({ showForm, onclick }) => {
             >
               <IoClose className="w-full h-full" />
             </button>
-            <div className="w-full">
+            <div className="w-full mt-3 md:mt-0">
               <h1 className="text-2xl font-semibold text-center">
                 Welcome back! Login
               </h1>
