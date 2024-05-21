@@ -14,7 +14,7 @@ const SearchProperty = () => {
           </label>
           <input
             type="text"
-            className="w-full text-sm outline-non placeholder:text-black"
+            className="w-full text-sm outline-none placeholder:text-black"
             placeholder="Karachi, Sindh"
           />
         </div>
